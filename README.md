@@ -37,8 +37,8 @@ O Sistema Financeiro Pessoal foi desenvolvido para ajudar os usuários a organiz
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-repositorio/sistema-financeiro.git
-   cd sistema-financeiro
+   git clone https://github.com/seu-repositorio/Personal_Finance.git
+   cd Personal_Finance
    ```
 
 2. Instale as dependências:
