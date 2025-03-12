@@ -1,4 +1,4 @@
-#Documentação do Sistema Financeiro Pessoal
+##Documentação do Sistema Financeiro Pessoal
 1. Descrição Geral
 O Sistema Financeiro Pessoal é uma aplicação desenvolvida em Python que permite aos usuários gerenciar suas finanças pessoais de forma organizada. O sistema é composto por um conjunto de funcionalidades que incluem criação de contas bancárias, movimentação de dinheiro, transferências entre contas, geração de relatórios financeiros e visualização gráfica dos dados.
 
