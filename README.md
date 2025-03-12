@@ -1,47 +1,92 @@
-##Documentação do Sistema Financeiro Pessoal
-1. Descrição Geral
-O Sistema Financeiro Pessoal é uma aplicação desenvolvida em Python que permite aos usuários gerenciar suas finanças pessoais de forma organizada. O sistema é composto por um conjunto de funcionalidades que incluem criação de contas bancárias, movimentação de dinheiro, transferências entre contas, geração de relatórios financeiros e visualização gráfica dos dados.
+Entendido! Vou fornecer uma documentação completa que você pode **copiar e colar diretamente** no seu arquivo `README.md`. A documentação estará organizada, clara e pronta para uso. Basta copiar o conteúdo abaixo e colá-lo no seu arquivo `README.md`.
 
-O sistema utiliza o framework SQLModel para interação com o banco de dados SQLite e segue boas práticas de programação, como tipagem explícita (type hints) e modularização do código.
+---
 
-2. Arquitetura do Projeto
-2.1. Estrutura de Arquivos
-A estrutura do projeto está organizada da seguinte forma:
+# **Sistema Financeiro Pessoal**
 
+O **Sistema Financeiro Pessoal** é uma aplicação Python que permite aos usuários gerenciar suas finanças pessoais de forma organizada. O sistema oferece funcionalidades como criação de contas bancárias, movimentação de dinheiro, transferências entre contas, geração de relatórios financeiros e visualização gráfica dos dados.
 
-models.py          # Define as classes do modelo de dados e Enums.
-view.py            # Contém as funções de lógica de negócio.
-database.py        # Configuração do banco de dados SQLite.
-interface.py       # Implementa a interface de interação com o usuário.
-README.md          # Documentação básica do projeto.
+---
 
-2.2. Tecnologias Utilizadas
-Python 3.x : Linguagem principal.
-SQLModel : Framework ORM para interação com o banco de dados.
-SQLite : Banco de dados relacional leve.
-Matplotlib : Biblioteca para geração de gráficos.
-Enum : Para definição de tipos fixos (ex.: Tipos, Categorias).
-Type Hints : Para melhor legibilidade e verificação estática de tipos.
+## **Índice**
+1. [Descrição](#descrição)
+2. [Funcionalidades](#funcionalidades)
+3. [Instalação](#instalação)
+4. [Uso](#uso)
+5. [Estrutura do Projeto](#estrutura-do-projeto)
+6. [Código Fonte](#código-fonte)
+7. [Contribuição](#contribuição)
 
-3. Funcionalidades
-O sistema oferece as seguintes funcionalidades principais:
+---
 
-3.1. Gerenciamento de Usuários
-Login/Cadastro : Os usuários podem criar uma conta ou fazer login no sistema.
-Autenticação Básica : Verifica nome de usuário e senha.
+## **Descrição**
 
-3.2. Gerenciamento de Contas
-Criar Conta : Adiciona uma nova conta bancária vinculada ao usuário.
-Listar Contas : Exibe todas as contas ativas do usuário.
-Desativar Conta : Permite desativar uma conta sem saldo.
+O Sistema Financeiro Pessoal foi desenvolvido para ajudar os usuários a organizar suas finanças de maneira prática e eficiente. Ele utiliza o framework **SQLModel** para interagir com um banco de dados SQLite e segue boas práticas de programação, como tipagem explícita (`type hints`) e modularização do código.
 
-3.3. Movimentações Financeiras
-Movimentar Dinheiro : Registra entradas ou saídas de dinheiro em uma conta.
-Tipos de movimentação: entrada ou saida.
-Categorias: Salário, Aluguel, Comida, Lazer, Outros.
-Transferir Dinheiro : Move saldo entre duas contas.
-3.4. Relatórios e Visualizações
-Total de Saldo : Calcula o saldo total de todas as contas do usuário.
-Filtrar Histórico : Lista movimentações dentro de um intervalo de datas.
-Geração de Gráficos : Exibe um gráfico de barras com os valores das contas ativas.
-Relatório Financeiro : Mostra entradas, saídas e saldo líquido em um período.
+---
+
+## **Funcionalidades**
+
+- **Gerenciamento de Usuários**: Cadastro e login de usuários.
+- **Contas Bancárias**: Criação, listagem e desativação de contas.
+- **Movimentações Financeiras**: Registros de entradas e saídas, transferências entre contas.
+- **Relatórios**: Geração de relatórios financeiros e filtros por período.
+- **Gráficos**: Visualização gráfica dos saldos das contas ativas.
+
+---
+
+## **Instalação**
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-repositorio/sistema-financeiro.git
+   cd sistema-financeiro
+   ```
+
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Inicie o sistema:
+   ```bash
+   python interface.py
+   ```
+
+---
+
+## **Uso**
+
+### **Login/Cadastro**
+Ao iniciar o sistema, você será solicitado a fazer login ou criar uma nova conta:
+```plaintext
+Nome de usuário: joao
+Senha: senha123
+```
+
+### **Menu Principal**
+Após o login, o menu principal será exibido:
+```plaintext
+Menu - Usuário: joao
+[1] - Criar conta
+[2] - Desativar conta
+[3] - Transferir dinheiro
+[4] - Movimentar dinheiro
+[5] - Total contas
+[6] - Filtrar histórico
+[7] - Gráfico
+[8] - Relatório financeiro
+[0] - Ajuda
+[Outro] - Sair
+```
+
+Escolha uma opção digitando o número correspondente.
+
+---
+
+## **Estrutura do Projeto**
+
+```
+projeto/
+│
+├── models.py          # Define as classes do modelo de dados e
