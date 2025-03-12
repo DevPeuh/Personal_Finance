@@ -7,6 +7,7 @@ O sistema utiliza o framework SQLModel para interação com o banco de dados SQL
 2. Arquitetura do Projeto
 2.1. Estrutura de Arquivos
 A estrutura do projeto está organizada da seguinte forma:
+
 projeto/
 │
 ├── models.py          # Define as classes do modelo de dados e Enums.
