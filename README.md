@@ -1,4 +1,4 @@
-Entendido! Vou fornecer uma documentação completa que você pode **copiar e colar diretamente** no seu arquivo `README.md`. A documentação estará organizada, clara e pronta para uso. Basta copiar o conteúdo abaixo e colá-lo no seu arquivo `README.md`.
+Entendido! Aqui está a documentação completa **sem os trechos de código**, pronta para você copiar e colar diretamente no seu arquivo `README.md`. A estrutura está organizada, clara e focada nas explicações.
 
 ---
 
@@ -14,8 +14,7 @@ O **Sistema Financeiro Pessoal** é uma aplicação Python que permite aos usuá
 3. [Instalação](#instalação)
 4. [Uso](#uso)
 5. [Estrutura do Projeto](#estrutura-do-projeto)
-6. [Código Fonte](#código-fonte)
-7. [Contribuição](#contribuição)
+6. [Contribuição](#contribuição)
 
 ---
 
@@ -86,7 +85,14 @@ Escolha uma opção digitando o número correspondente.
 
 ## **Estrutura do Projeto**
 
+O projeto está organizado da seguinte forma:
+
 ```
 projeto/
 │
-├── models.py          # Define as classes do modelo de dados e
+├── models.py          # Define as classes do modelo de dados e Enums.
+├── view.py            # Contém as funções de lógica de negócio.
+├── database.py        # Configuração do banco de dados SQLite.
+├── interface.py       # Implementa a interface de interação com o usuário.
+└── README.md          # Documentação básica do projeto.
+```
