@@ -8,13 +8,12 @@ O sistema utiliza o framework SQLModel para interação com o banco de dados SQL
 2.1. Estrutura de Arquivos
 A estrutura do projeto está organizada da seguinte forma:
 
-projeto/
-│
-├── models.py          # Define as classes do modelo de dados e Enums.
-├── view.py            # Contém as funções de lógica de negócio.
-├── database.py        # Configuração do banco de dados SQLite.
-├── interface.py       # Implementa a interface de interação com o usuário.
-└── README.md          # Documentação básica do projeto.
+
+models.py          # Define as classes do modelo de dados e Enums.
+view.py            # Contém as funções de lógica de negócio.
+database.py        # Configuração do banco de dados SQLite.
+interface.py       # Implementa a interface de interação com o usuário.
+README.md          # Documentação básica do projeto.
 
 2.2. Tecnologias Utilizadas
 Python 3.x : Linguagem principal.
