@@ -1,4 +1,3 @@
-Entendido! Aqui está a documentação completa **sem os trechos de código**, pronta para você copiar e colar diretamente no seu arquivo `README.md`. A estrutura está organizada, clara e focada nas explicações.
 
 ---
 
