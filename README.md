@@ -94,3 +94,6 @@ projeto/
 ├── interface.py       # Implementa a interface de interação com o usuário.
 └── README.md          # Documentação básica do projeto.
 ```
+
+## **Diagrama MER**
+![Diagrama MER](./diagrama.png)
