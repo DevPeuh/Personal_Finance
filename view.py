@@ -46,7 +46,7 @@ def desativar_conta(conta_id: int) -> None:
             raise ValueError('Conta já está desativada')
         if conta.valor > 0:
             raise ValueError('Conta com saldo positivo não pode ser desativada')
-        conta.status = Status.INATIVO
+        conta.status = Status.INATIVO # Caso dê tudo certo
         session.commit()
 
 def transferir_saldo(id_conta_saida: int, id_conta_entrada: int, valor: float) -> None:
@@ -86,14 +86,14 @@ def movimentar_dinheiro(historico: Historico) -> Historico:
 def total_contas(usuario_id: int) -> float:
     with Session(engine) as session:
         contas = session.exec(select(Conta).where(Conta.usuario_id == usuario_id)).all()
-        return sum(conta.valor for conta in contas)
+        return sum(conta.valor for conta in contas) # Soma os valores de todas as contas
 
-def buscar_historicos_entre_datas(usuario_id: int, data_inicio: date, data_fim: date) -> List[Historico]:
+def buscar_historicos_entre_datas(usuario_id: int, data_inicio: date, data_fim: date) -> List[Historico]: # Retorna lista de objeto do modelo Historico
     with Session(engine) as session:
         return session.exec(
             select(Historico)
             .join(Conta)
-            .where(Historico.data.between(data_inicio, data_fim), Conta.usuario_id == usuario_id)
+            .where(Historico.data.between(data_inicio, data_fim), Conta.usuario_id == usuario_id) # Filtra a data do período
         ).all()
 
 def relatorio_financeiro(usuario_id: int, data_inicio: date, data_fim: date) -> Dict[str, float]:
