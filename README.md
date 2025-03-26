@@ -12,7 +12,6 @@ O **Sistema Financeiro Pessoal** é uma aplicação Python que permite aos usuá
 3. [Instalação](#instalação)
 4. [Uso](#uso)
 5. [Estrutura do Projeto](#estrutura-do-projeto)
-6. [Contribuição](#contribuição)
 
 ---
 
