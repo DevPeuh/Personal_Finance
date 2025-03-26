@@ -82,12 +82,12 @@ class Interface:
     def _listar_contas(self):
         print('Contas disponíveis:')
         for conta in listar_contas(self.usuario_atual.id):
-            print(f"{conta.id} - {conta.banco.value} - R$ {conta.valor:.2f} ({conta.status.value})")
+            print(f'{conta.id} - {conta.banco.value} - R$ {conta.valor:.2f} ({conta.status.value})')
 
     def _criar_conta(self):
         print('Escolha um banco:')
         for banco in Bancos:
-            print(f'--- {banco.value} ---')
+            print(f'-- {banco.value} --')
         banco = input('Banco: ').title()
         valor = float(input('Valor inicial: '))
         try:
