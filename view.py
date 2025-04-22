@@ -6,7 +6,7 @@ from typing import List, Dict, Optional
 from datetime import date
 
 
-def buscar_usuario_nome(nome: str, session: Session) -> Optional[Usuario]: # Caso não haja usuário, retorna none
+def buscar_usuario_nome(nome: str, session: Session) -> Optional[Usuario]: # Caso não haja usuário retorna none
     return session.exec(select(Usuario).where(Usuario.nome == nome)).first()
 
 def buscar_usuario_id(conta_id: int, session: Session) -> Optional[Conta]: # Caso não haja usuário, retorna none
