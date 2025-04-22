@@ -26,7 +26,7 @@ class Interface:
                 usuario = buscar_usuario_nome(nome, session)
                 if usuario and usuario.senha == senha:
                     self.usuario_atual = usuario
-                    print(f'Bem-vindo, {nome}!')
+                    print(f'Bem vindo, {nome}!')
                     break
                 elif not usuario:
                     print('Usuário não encontrado. Deseja criar um novo? (s/n)')
